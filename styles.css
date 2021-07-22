@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+    font-family: hind siliguri;
+}
+
+body {
+    background-color: #97EC14;
+}
+
+img {
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
+    padding: 20px;
+}
+
+.submit {
+    display: flex;
+    margin: auto;
+}
+
+.box {
+    border: 5px solid green;
+    text-align: center;
+    padding: 25px;
+}
+
+.open {
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.paragraph {
+    font-size: 20px;
+    font-family: "Comic Sans";
+}
