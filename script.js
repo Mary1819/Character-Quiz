@@ -28,32 +28,36 @@ $(".next").click(function() {
         $(".paragraph").text("Spring season fits you!!! 🌸");
         $(".springimg").show();
         $("body").css("background-color", "orange");
+        $(".reset").show();
 
-    } else if (weather2 === "cold"  && temperature2 < 70) {
+    } else if (weather2 === "cold" && temperature2 < 70) {
         $(".open").text("Winter");
         $(".paragraph").text("Winter season fits you!!! ❄");
         $(".winterimg").show();
         $("body").css("background-color", "white");
+        $(".reset").show();
 
-        } else if (weather2 === "hot" && temperature2 >= 70) {
+    } else if (weather2 === "hot" && temperature2 >= 70) {
         $(".open").text("Summer");
         $(".paragraph").text("Summer season fits you!!! ☀️");
         $(".summerimg").show();
         $("body").css("background-color", "aqua");
-    
-        } else if (weather2 === "cold" && temperature2 >=70	) {
+        $(".reset").show();
+
+    } else if (weather2 === "cold" && temperature2 >= 70) {
         $(".open").text("Autumn/Fall");
         $(".paragraph").text("Autumn/Fall season fits you!!! 🍁");
         $(".fallimg").show();
         $("body").css("background-color", "orange");
+        $(".reset").show();
 
     } else {
         $(".paragraph").text("Oops you did it wrong...");
         $(".oops").show();
         $("body").css("background-color", "red");
         $(".reset").show();
-        $(".reset").click(function() {
-        location.reload();
-       });
     }
+    $(".reset").click(function() {
+        location.reload();
+    });
 });
